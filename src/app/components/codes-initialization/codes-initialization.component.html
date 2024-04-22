@@ -1,0 +1,45 @@
+<!-- <mat-tab-group>
+  <mat-tab label="الشرائح"> </mat-tab>
+  <mat-tab label="التبديلات"> </mat-tab>
+  <mat-tab label="التعويضات"></mat-tab>
+  <mat-tab label="الحسميات"> </mat-tab>
+  <mat-tab label="الرواتب"> </mat-tab>
+  <mat-tab label="الأجازات"></mat-tab>
+  <mat-tab label="حدود الاعفاء"></mat-tab>
+  <mat-tab label="المكاتب"></mat-tab>
+</mat-tab-group> -->
+<hero-section
+  title="تهيئة التراميز"
+  description="تعريف التراميز ومعاملات الحساب المستخدمة في نظام الرواتب "
+  imageUrl="../../../assets/images/why-us.png"
+></hero-section>
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>التراميز</h2>
+      <p>
+        يمكنك اضافة ترميز
+        <strong>أو</strong>
+        الاستعلام عن قيمه
+      </p>
+    </div>
+
+    <div class="row">
+      <div
+        class="col-xl-3 col-md-6 d-flex align-items-stretch"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        *ngFor="let c of codes"
+      >
+        <div class="icon-box">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4>
+            <a routerLink="/data">{{ c.name }}</a>
+          </h4>
+          <p>{{ c.discription }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Services Section -->
